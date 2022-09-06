@@ -1,0 +1,44 @@
+
+$color-black: #000000;
+$color-red: #E85440;
+$color-red-light: #FFF2F2;
+$color-blue: #4394F0;
+$color-gray70: #4D5358;
+$color-gray80: #343A3F;
+$color-gray50: #878D96;
+$color-gray20: #DDE1E6;
+$color-gray10: #F2F4F8;
+$color-gray: #697077;
+
+.timerWrapper {
+    display: inline-block;
+    width: 82px;
+    height: 24px;
+    background-color: $color-gray10;
+    border-radius: 4px;
+    .timer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;        
+        span{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: $color-gray50;
+        }
+    }
+}
+
+.isBusy {
+    background-color: $color-red-light;
+    .timer {
+        span{
+            color: $color-red;
+        }
+    }
+}
+

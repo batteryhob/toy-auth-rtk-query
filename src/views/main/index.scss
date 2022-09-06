@@ -1,0 +1,65 @@
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-red: #E85440;
+$color-blue: #4394F0;
+$color-blue-light: #F0F4FA;
+$color-gray: #697077;
+$color-gray10: #F2F4F8;
+$color-gray20: #DDE1E6;
+$color-gray50: #878D96;
+$color-gray70: #4D5358;
+$color-gray80: #343A3F;
+
+.main {
+    .main-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .main-title {            
+            padding: 0px 24px;
+            h1 {
+                margin-top: 64px;
+                margin-bottom: 20px;
+            }
+            .main-title-info {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 16px;
+                background-color: #F8F8F8;
+                border-radius: 8px;     
+                .text {
+                    display : flex;
+                    justify-content : center;
+                    align-items : center;
+                }
+                .icon {
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .main-form {
+            flex: 1;
+            padding: 0px 24px;
+            form {
+                > div {
+                 margin-top: 32px;   
+                }
+            }
+        }
+        .main-btn-group {
+            padding: 24px;
+        }
+    }
+    .main-modal-all-group {
+        margin-bottom: 16px;
+        padding: 12px;
+        border: 1px solid $color-gray20;
+        border-radius: 8px;
+    }
+    .main-modal-checkbox-group {
+        margin-bottom: 32px;
+    }
+}
+

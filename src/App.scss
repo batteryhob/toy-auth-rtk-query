@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import './styles/font';
+
+$size-mobile: 375px;
+$size-tablet: 640px;
+$min-height: 640px;
+
+/* base */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  font-family: 'NotoSans KR';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+/* text */
+h1 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  word-break: normal;
+}
+h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  word-break: normal;
+}
+p {
+  margin: 0;
+}
+.strong {
+  font-weight: 700;
+}
+
+/* focus */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* button */
+button {
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+}
+
+
+/* list */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: $min-height;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: #{$size-mobile};
+    max-width: #{$size-tablet};
+  }
+}
+

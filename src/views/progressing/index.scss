@@ -1,0 +1,83 @@
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-red: #E85440;
+$color-blue: #4394F0;
+$color-blue-light: #F0F4FA;
+$color-gray: #697077;
+$color-gray10: #F2F4F8;
+$color-gray20: #DDE1E6;
+$color-gray50: #878D96;
+$color-gray70: #4D5358;
+$color-gray80: #343A3F;
+
+.progress {
+    .progress-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .progress-title {   
+            text-align: center;       
+            h1 {
+                margin-top: 64px;
+            }
+            .progress-timer-wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 20px;
+                padding-bottom: 32px;
+            }
+        }
+        .progress-divider {
+            height: 12px;
+            background: $color-gray10;
+        }
+        .progress-guide {
+            flex: 1;
+            padding: 32px 40px 0px 40px;
+            ul {
+                .progress-guide-item {
+                    display: flex;
+                    margin-bottom: 32px;
+                    .thumbnail {
+                        margin-right: 36px;
+                        width: 88px;
+                        height: 88px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }                        
+                    }
+                    .description {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        .title {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 150%;
+
+                            color: $color-gray80;
+                        }
+                        .desc {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 140%;
+
+                            color: $color-gray50;
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+        .progress-btn-group {
+            padding: 24px;
+        }
+    }
+}

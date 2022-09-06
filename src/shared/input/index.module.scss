@@ -1,0 +1,79 @@
+@import "../../styles/color";
+
+.customInput {
+    position: relative;
+    width: 100%;
+}
+
+.customInputLabel {
+    margin-bottom: 8px;
+    line-height: 140%;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.customInputContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    height: 45px;
+    border-bottom: 1px solid $color-gray20;
+    input[type="text"],
+    input[type="password"] {
+        box-sizing: border-box;        
+        width: 100%;
+        height: 27px;
+        padding: 0px;
+        border: none;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+.focused {
+    border-bottom: 1px solid $color-black;
+}
+
+.customInputSub {
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-gray;
+    p {
+        span {
+            margin-right: 5px;
+            color: $color-blue;            
+        }
+    }
+}
+
+.customInputContentMulti {
+    display: flex;
+    align-items: center;
+    .customInputContent {
+        flex: 1;
+    }
+    .hyphen {
+        display: inline-block;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 5px;
+        height: 2px;
+        background-color: $color-gray80;
+    }
+}
+
+.customInputError {
+    .customInputContent {
+        border-bottom: 1px solid $color-red;
+    }
+    .customInputSub {
+        color: $color-red;
+    }
+}
+
