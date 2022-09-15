@@ -32,6 +32,5 @@ test('입력 폼에 벨리데이션을 통과하면, 버튼이 활성화 된다.
     expect(validate).not.toHaveClass('disabled');
 
     await fireEvent.click(validate);
-
     expect(screen.getByRole('modal_main')).toHaveClass('on');
 });

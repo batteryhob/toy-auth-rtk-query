@@ -4,6 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 import { useAppSelector } from "../../app/hooks";
 
+import { getRegisterState, setRegisterStatus } from "../../features/registerSlice";
 import { getExpireTimeState, setExpireTime, init as initExpireTime } from "../../features/expireTimeSlice";
 import { useGetExpireTimeMutation, useGetGuideQuery, useGetServerTimeQuery, useSetCompleteMutation } from "../../services/easysignApi";
 
@@ -12,7 +13,6 @@ import Timer from "./components/timer";
 
 import moment from "moment";
 import "./index.scss";
-import { getRegisterState, setRegisterStatus } from "../../features/registerSlice";
 
 /*
   인증뷰
